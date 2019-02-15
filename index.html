@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TopNavBar</title>
+    <style>
+      body {
+        margin: 0;
+        color: white;
+        background-color: black;
+      }
+
+      .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .topNavBar {
+        margin: 18px 16px;
+      }
+
+      .topNavBar > nav {
+        float: right;
+      }
+
+      .topNavBar > nav > ul {
+        list-style: none;
+      }
+
+      .topNavBar > nav > ul > li {
+        float: left;
+      }
+ 
+      .topNavBar > nav > ul > li > a {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 24rpx;
+        margin: 0 18px;
+        box-sizing: border-box;
+        font-weight: bold;
+        display: block;
+      }
+
+      .topNavBar > nav > ul > li > a:hover {
+        border-bottom: 3px solid #dc6465;
+      }
+
+      .logo {
+        float: left;
+        font-family: 'Arial Black';
+      }
+
+      .logo > .rs {
+        font-size: 32px;
+        color: #e6686a;
+        margin-right: 4px;
+      }
+
+      .logo > .card {
+        color: #9A9DA2;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topNavBar clearfix">
+      <a href="#" class="logo">
+        <span class="rs">RS</span><span class="card">card</span>
+      </a>
+      <nav>
+        <ul class="clearfix">
+          <li><a href="#">关于</a></li>
+          <li><a href="#">技能</a></li>
+          <li><a href="#">作品</a></li>
+          <li><a href="#">博客</a></li>
+          <li><a href="#">日历</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">其他</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
